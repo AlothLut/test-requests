@@ -1,3 +1,7 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+settings:
+    path: /settings/{service}
+    controller: App\Controller\SettingsController::getSettings
+
+settings-set:
+    path: /settings-set/{service}
+    controller: App\Controller\SettingsController::setSettings
